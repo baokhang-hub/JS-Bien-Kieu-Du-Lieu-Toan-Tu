@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = 10 * (2 + '3') - '30' + 20 / '5' - 1 - ('11' + 5 / '6');
+    //10*(2+'3')=10*23=230 vì số 2 + với string '3' thì nó sẽ không cộng lại mà ra 23
+    //('11'+5/'6')=110.833 vì string '11' với 5/'6' thì nó sẽ không cộng lại mà sẽ ra 110.833 số 5 / string '6' thì sẽ không bị ảnh hưởng gì vẫn là 5/6
+    //'30'+20/'5'vì 20/'5' vẫn ra 4 ->string'30'+4
+    //-> theo toán học toàn nhân chia trc cộng trừ sau làm trong ngoặc trước -> 230 - '30' + 4 - 1 - 100.833
+    console.log(value);
+</script>
+</body>
+</html>
