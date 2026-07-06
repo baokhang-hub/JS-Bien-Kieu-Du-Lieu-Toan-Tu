@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<ul>
+    <li id="bang"></li>
+    <li id="lonHon"></li>
+    <li id="khac"></li>
+</ul>
+<script>
+    let a = prompt('Nhập số a');
+    let b = prompt('Nhập số b');
+
+    let soSanhBang = a == b;
+    let soSanhLonHon = a > b;
+    let soSanhKhac = a != b;
+
+    console.log(soSanhBang);
+    console.log(soSanhLonHon);
+    console.log(soSanhKhac);
+
+    document.getElementById('bang').innerText = 'A bằng B không: ' + soSanhBang;
+    document.getElementById('lonHon').innerText = 'A lớn hơn B không: ' + soSanhLonHon;
+    document.getElementById('khac').innerText = 'A khác B không: ' + soSanhKhac;
+</script>
 </body>
 </html>

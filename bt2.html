@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="number1" placeholder="Số A">
+<input type="text" id="number2" placeholder="Số B">
+<button onclick="congHaiSo()">Tính</button>
+<h1 id="ketQua"></h1>
+<script>
+    let name=prompt('Nhập tên của bạn');
+    console.log('Người dùng: '+name);
+    document.writeln('Chào '+name);
+    function congHaiSo() {
+        let number1 = +document.getElementById('number1').value;
+        let number2 = +document.getElementById('number2').value;
+
+        let tinhTong = number1 + number2;
+
+        document.getElementById('ketQua').innerText=tinhTong;
+    }
+</script>
 </body>
 </html>
